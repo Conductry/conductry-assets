@@ -6,6 +6,7 @@
 
 @import './button.css';
 @import './form.css';
+@import './logo.css';
 @import './text.css';
 @import './visibility.css';
 
@@ -18,20 +19,6 @@ body {
 	margin: 0 auto;
 	padding: var(--spacing);
 	text-align: center;
-}
-
-.logo {
-	--height-this: 120px;
-	background: var(--color-primary);
-	border-radius: calc(var(--ios-radius) * var(--height-this));
-	height: var(--height-this);
-	padding: var(--spacing--ty);
-	margin-bottom: var(--spacing-sm);
-	overflow: visible;
-}
-
-.logo path {
-	fill: var(--color-primary--fore);
 }
 
 /* Success/Error messages */
