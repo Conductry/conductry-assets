@@ -1,7 +1,7 @@
 .logo {
     --height-this: 120px;
     background: var(--color-primary, #000);
-    border-radius: calc(var(--ios-radius) * var(--height-this), .5rem);
+    border-radius: calc(var(--ios-radius, calc(14 / 57)) * var(--height-this, 120px));
     height: var(--height-this, 120px);
     padding: var(--spacing--ty, .5rem);
     margin-bottom: var(--spacing-sm, 1rem);
