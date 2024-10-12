@@ -7,7 +7,3 @@
     margin-bottom: var(--spacing-sm, 1rem);
     overflow: visible;
 }
-
-.logo-path {
-    fill: var(--color-primary--fore, #FFF);
-}
