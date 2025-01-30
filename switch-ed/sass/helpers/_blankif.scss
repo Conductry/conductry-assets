@@ -1,0 +1,8 @@
+@function blankif($value, $comparator) {
+
+    @if $value ==$comparator {
+        @return "";
+    }
+
+    @return $value;
+}

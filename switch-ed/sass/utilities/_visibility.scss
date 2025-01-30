@@ -1,0 +1,22 @@
+@use "../settings/variables" as v;
+@use "../helpers/helpers" as h;
+
+@each $breakpoint, $bpValue in v.$breakpoints {
+
+    @media (min-width: $bpValue) {
+
+        .invisible#{h.prefix(h.blankif($breakpoint, "mbl"), "-")} {
+            visibility: "hidden";
+        }
+
+        .visible#{h.prefix(h.blankif($breakpoint, "mbl"), "-")} {
+            display: unset;
+            visibility: visible;
+        }
+
+        .hide#{h.prefix(h.blankif($breakpoint, "mbl"), "-")} {
+            display: none;
+        }
+
+    }
+}

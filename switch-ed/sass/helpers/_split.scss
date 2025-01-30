@@ -1,0 +1,10 @@
+@function split($string, $search) {
+
+    $index: str-index($string, $search);
+
+    @while $index {
+        @return join(str-slice($string, 1, $index - 1), split(str-slice($string, $index + str-length($search)), $search));
+    }
+
+    @return $string
+}

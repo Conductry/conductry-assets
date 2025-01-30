@@ -1,0 +1,15 @@
+@use "./blankif" as b;
+@use "./prefix" as p;
+@use "./split" as s;
+
+@function blankif($value, $comparator) {
+    @return b.blankif($value, $comparator);
+}
+
+@function prefix($value, $prefix) {
+    @return p.prefix($value, $prefix);
+}
+
+@function split($value, $separator) {
+    @return s.split($value, $separator);
+}

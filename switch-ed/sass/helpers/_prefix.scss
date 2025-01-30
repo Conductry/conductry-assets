@@ -1,0 +1,8 @@
+@function prefix($value, $prefix) {
+
+    @if $value =="" {
+        @return "";
+    }
+
+    @return "#{$prefix}#{$value}";
+}

@@ -1,0 +1,22 @@
+@use "../settings/variables" as v;
+@use "../helpers/helpers" as h;
+
+@each $breakpoint, $bpValue in v.$breakpoints {
+
+    @media (min-width: $bpValue) {
+
+        @each $face, $fcValue in v.$faces {
+
+            @each $size, $szValue in v.$sizes {
+
+                .p#{$fcValue}#{h.prefix(h.blankif($breakpoint, "mbl"), "-")}-#{$size} {
+
+                    @each $edge in h.split($face, "-") {
+                        padding#{h.prefix(h.blankif($edge, "all"), "-")}: $szValue;
+                    }
+
+                }
+            }
+        }
+    }
+}

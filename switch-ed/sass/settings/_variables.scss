@@ -1,0 +1,41 @@
+:root {
+    --breakpoint-mob: 0px;
+    --breakpoint-tbl: 640px;
+    --breakpoint-dsk: 970px;
+    --breakpoint-wde: 1024px;
+
+    --size-xxs: var(--size-md) * 0.25;
+    --size-xs: var(--size-md) * 0.50;
+    --size-sm: var(--size-md) * 0.75;
+    --size-md: 1.00;
+    --size-lg: var(--size-md) * 1.50;
+    --size-xl: var(--size-md) * 2.00;
+    --size-xxl: var(--size-md) * 3.0;
+}
+
+$breakpoints: (
+    mbl: var(--breakpoint-mob),
+    tbl: var(--breakpoint-tbl),
+    dsk: var(--breakpoint-dsk),
+    wde: var(--breakpoint-wde)
+);
+
+$sizes: (
+    xxs: var(--size-xxs),
+    xs: var(--size-xs),
+    sm: var(--size-sm),
+    md: var(--size-md),
+    lg: var(--size-lg),
+    xl: var(--size-xl),
+    xxl: var(--size-xxl)
+);
+
+$faces: (
+    all: "",
+    top: "t",
+    right: "r",
+    bottom: "b",
+    left: "l",
+    left-right: "h",
+    top-bottom: "v"
+);
